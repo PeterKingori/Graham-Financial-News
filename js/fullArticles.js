@@ -2,7 +2,7 @@
 const fullArticles = [
   {
     id: 1,
-    image: "/images/articleImages/IFM-Amin-Hassan-Nasser.jpg",
+    image: "./images/articleImages/IFM-Amin-Hassan-Nasser.jpg",
     imageAlt: "Amin Hassan Nasser",
     date: "1st September 2023",
     author: "Prabuddha Ghosh",
@@ -53,7 +53,7 @@ const fullArticles = [
   },
   {
     id: 2,
-    image: "/images/articleImages/IFM-Twitter.jpg",
+    image: "./images/articleImages/IFM-Twitter.jpg",
     imageAlt: "Twitter app",
     date: "31st August 2023",
     author: "International Finance Business Desk",
@@ -104,7 +104,7 @@ const fullArticles = [
   },
   {
     id: 3,
-    image: "/images/articleImages/WF-Succession-Cast.jpeg",
+    image: "./images/articleImages/WF-Succession-Cast.jpeg",
     imageAlt: "Succession cast",
     date: "",
     author: " Julie Charlestein",
@@ -129,7 +129,7 @@ const fullArticles = [
   },
   {
     id: 4,
-    image: "/images/articleImages/IFM-OTT-Platform.jpg",
+    image: "./images/articleImages/IFM-OTT-Platform.jpg",
     imageAlt: "Streaming platforms",
     date: "23rd August 2023",
     author: "International Finance Business Desk",
@@ -170,7 +170,7 @@ const fullArticles = [
   },
   {
     id: 5,
-    image: "/images/articleImages/IFM-Mekha-V-1.jpg",
+    image: "./images/articleImages/IFM-Mekha-V-1.jpg",
     imageAlt: "Mekha V CEO",
     date: "17th August 2023",
     author: "International Finance Business Desk",
@@ -213,7 +213,7 @@ const fullArticles = [
   },
   {
     id: 6,
-    image: "/images/articleImages/IFM-Dilma-Rousseff.jpg",
+    image: "./images/articleImages/IFM-Dilma-Rousseff.jpg",
     imageAlt: "Dilma Rousseff",
     date: "28th August 2023",
     author: "International Finance Business Desk",
@@ -252,7 +252,7 @@ const fullArticles = [
   },
   {
     id: 7,
-    image: "/images/articleImages/IFM-Starling-Bank.jpg",
+    image: "./images/articleImages/IFM-Starling-Bank.jpg",
     imageAlt: "Starling Bank app",
     date: "26th July 2023",
     author: "Prabuddha Ghosh",

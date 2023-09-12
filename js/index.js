@@ -224,23 +224,24 @@ loadMore.addEventListener("click", function () {
 });
 
 // Country to fetch news from
-const country = "us";
+const country = "gb";
 // Category of news to fetch
 let category = "technology";
 // Request url
-let requestUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=${api_key}`;
+// let requestUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=${api_key}`;
+let requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${api_key}`;
 
 // Object with API authorisation header and content type header
-const REQUEST_HEADERS = {
-  "x-api-key": api_key,
-};
+// const REQUEST_HEADERS = {
+//   "x-api-key": api_key,
+// };
 
 // Create posts for each news article
 function createTechPosts(articles) {
   articles.forEach(function (article) {
     let articleOutput = document.createElement("article");
     articleOutput.classList.add("news-post-item");
-    articleOutput.innerHTML = `<img src=${article.urlToImage || "./images/articleImages/default-news-image.jpg"} alt=${
+    articleOutput.innerHTML = `<img src=${article.image || "./images/articleImages/default-news-image.jpg"} alt=${
       article.title
     } class="post-item-image">
     <p class="post-item-date">${article.publishedAt}</p>
@@ -255,6 +256,7 @@ const getTechNews = async () => {
   let response = await fetch(requestUrl);
   if (!response.ok) {
     console.log("Error while fetching data.");
+    return;
   }
   let data = await response.json();
   createTechPosts(data.articles);

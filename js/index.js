@@ -252,7 +252,7 @@ function createTechPosts(articles) {
 
 // API call
 const getTechNews = async () => {
-  let response = await fetch(requestUrl, { mode: "cors", headers: REQUEST_HEADERS });
+  let response = await fetch(requestUrl, { mode: "no-cors", method: "POST", headers: REQUEST_HEADERS });
   if (!response.ok) {
     console.log("Error while fetching data: ", error);
   }

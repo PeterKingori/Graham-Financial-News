@@ -1,0 +1,640 @@
+/* Self hosted fonts */
+@font-face {
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: bold;
+    src: local('Times New Roman'), url('/assets/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 200;
+    src: local('Open Sans'), url('/assets/fonts/Montserrat-Light.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans'), url('/assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans'), url('/assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+
+/* ========================================================= */
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fbfaf9;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #111;
+}
+
+/* Change the color of links on hover */
+a:hover {
+    color: #e09d37;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Libre Baskerville";
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+p {
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* =========================================================== */
+/* Header styles */
+header {
+    background-color: #001f3f;
+    padding-top: 30px;
+}
+
+/* Style the company logo at the top */
+.logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 400px;
+}
+
+/* Style the layout and arrangement of the links in the navigation bar */
+.main-navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.main-navigation a {
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #fff;
+}
+
+img#nav-icon,
+img#close-icon {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+/* The sticky class is added to the navigation bar with JavaScript when it reaches its scroll position */
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1408px;
+    background-color: #001f3f;
+    z-index: 100;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement */
+.navbarOffsetMargin {
+    padding-top: 45px;
+}
+
+
+/* Hide the hamburger icon that should open and close the top navigation on small screens */
+
+
+/* End header styles */
+
+/* =========================================================== */
+/* Featured news section styles */
+.category-title,
+.carousel-container {
+    position: relative;
+    margin: auto;
+}
+
+.category-title {
+    margin-bottom: 12px;
+}
+
+/* Style the content inside each slide */
+.slides-content {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.carousel-image {
+    width: 400px;
+    flex-basis: 40%;
+    object-fit: cover;
+}
+
+/* Hide the slides by default */
+.slides {
+    display: none;
+}
+
+/* Next and previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the next button */
+.next {
+    color: #111;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Styling when hovering over the previous and next buttons */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-text {
+    flex-basis: 55%;
+    padding-top: 70px;
+    padding-inline-end: 40px;
+}
+
+.carousel-article-title {
+    font-family: "Libre Baskerville";
+    display: block;
+    font-size: 1.5em;
+}
+
+.carousel-article-title,
+.carousel-article-text {
+    margin-bottom: 12px;
+}
+
+.carousel-article-text,
+.carousel-article-author,
+.carousel-article-date {
+    color: #58595b;
+}
+
+.carousel-article-author {
+    margin-bottom: 5px;
+}
+
+/* End of featured news section styles */
+
+/* ===================================================== */
+/* Other news section styles */
+.news-categories,
+.news-articles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.news-articles {
+    flex-basis: 75%;
+}
+
+.left-news-category {
+    flex-basis: 40%;
+    padding-right: 20px;
+}
+
+a.post-link {
+    font-family: "Libre Baskerville";
+    font-size: 1.17em;
+}
+
+.left-news-category .post-item-image,
+.middle-news-category .post-item-image {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.middle-news-category {
+    flex-basis: 60%;
+    padding: 0px 30px 0px 30px;
+    border-right: 2px solid #111;
+    border-left: 2px solid #111;
+}
+
+.left-news-category article,
+.middle-news-category article {
+    margin-bottom: 20px;
+}
+
+.right-news-category {
+    flex-basis: 25%;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-post-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    padding: 10px;
+}
+
+.news-post-item:hover {
+    background-color: #eee;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.popular-news-list {
+    padding-bottom: 10px;
+    padding-inline-start: 12px;
+    margin-bottom: 20px;
+}
+
+.popular-news-list ol,
+.related-news-list ol {
+    color: #006892;
+    font-family: Montserrat;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 1rem;
+    list-style-type: decimal;
+    padding: 0 0 0 16px;
+    margin: 0;
+}
+
+.popular-news-list ol li a:hover,
+.related-news-list ol li a:hover {
+    color: #006892;
+    font-weight: normal;
+}
+
+.popular-news-list li,
+.related-news-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.videos iframe {
+    width: 320px;
+    height: 280px;
+}
+
+/* End of other news section styles */
+
+/* ===================================================== */
+/* Footer section styles */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 50px 0;
+    background-color: #001f3f;
+}
+
+.left-footer-section ul,
+.middle-footer-section ul {
+    list-style: none;
+}
+
+.left-footer-section ul li a,
+.middle-footer-section ul li a,
+footer p,
+.social-links a,
+.code-validators,
+.code-validators a {
+    color: #fff;
+}
+
+/* End of footer section styles */
+
+/* ===================================================== */
+/* ===================================================== */
+/* ===================================================== */
+/* Media queries */
+
+/* Styles for screen sizes between 413px and 768px, e.g for tablets */
+@media screen and (min-width:413px) and (max-width: 768px) {
+
+    /* Styles for the feature news slideshow section */
+    .slides-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carousel-image {
+        width: 80%;
+        object-fit: cover;
+    }
+
+    .prev,
+    .next {
+        top: 40%;
+        margin-top: 0;
+    }
+
+    .prev {
+        color: #111;
+    }
+
+    .carousel-text {
+        padding: 10px;
+    }
+
+    .carousel-article-title,
+    .carousel-article-text {
+        margin-bottom: 12px;
+    }
+
+    .carousel-text p {
+        font-size: 12px;
+    }
+
+    /* Styles for the other news section */
+    .news-categories {
+        flex-direction: column;
+    }
+
+    .news-articles,
+    .right-news-category {
+        flex-basis: 100%;
+    }
+
+    .left-news-category,
+    .middle-news-category {
+        flex-basis: 50%;
+    }
+
+    .left-news-category {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .news-list,
+    .news-videos {
+        flex-basis: 50%;
+    }
+
+    .news-articles {
+        gap: 12px;
+    }
+
+    .middle-news-category {
+        border-right: none;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Styles for the popular news and videos column */
+
+    .right-news-category {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .videos iframe {
+        width: 240px;
+        height: 240px;
+    }
+}
+
+
+/* Styles for screen sizes below 412px */
+@media screen and (max-width: 412px) {
+
+    section {
+        margin-bottom: 10px;
+    }
+
+    /* Styles for the header and navigation */
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        text-align: left;
+        margin: 20px;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    .main-navigation a {
+        display: none;
+        font-size: 18px;
+    }
+
+    img#nav-icon {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        background-color: white;
+    }
+
+    /* Styles when the navigation menu is clicked to reveal the menu */
+    .container.responsive {
+        background-color: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .logo.responsive {
+        display: none;
+    }
+
+    .main-navigation.responsive {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-navigation.responsive a {
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .main-navigation.responsive img#close-icon {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background-color: #fff;
+    }
+
+    .main-navigation.responsive #nav-icon {
+        display: none;
+    }
+
+    .main-navigation.responsive a:visited {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .main-navigation.responsive a:hover {
+        color: #e09d37;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .slides-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .carousel-image {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .prev,
+    .next {
+        top: 40%;
+        margin-top: 0;
+    }
+
+    .prev {
+        color: #111;
+    }
+
+    .carousel-text {
+        padding: 10px;
+    }
+
+    .carousel-article-title,
+    .carousel-article-text {
+        margin-bottom: 12px;
+    }
+
+    .carousel-article-title {
+        font-size: 1rem;
+    }
+
+    .carousel-text p {
+        font-size: 10px;
+    }
+
+    /* Styles for the other news section */
+    .section-heading {
+        margin-bottom: 5px;
+    }
+
+    .news-categories,
+    .news-articles {
+        flex-direction: column;
+    }
+
+    .news-articles,
+    .left-news-category,
+    .middle-news-category {
+        flex-basis: 100%;
+    }
+
+    .left-news-category {
+        padding: 0;
+    }
+
+    .middle-news-category {
+        border: none;
+        padding: 0;
+    }
+
+    .right-news-category {
+        flex-direction: column;
+    }
+
+    /* Styles for the footer */
+    footer {
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 20px;
+        gap: 20px;
+    }
+
+
+}

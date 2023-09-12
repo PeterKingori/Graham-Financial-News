@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Responsive/Encoding Metas -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO Meta tags -->
+        <meta name="author" content="Peter Kingori Ndegwa">
+        <meta name="description" content="Financial, Business, Investment and Technology News">
+        <meta name="keywords" content="news, financial, business, investment, technology">
+        <meta name="robots" content="index, follow">
+        <meta name="og:title" property="og:title" content="Graham Financial News">
+        <meta name="og:description" property="og:description"
+            content="Financial, Business, Investment and Technology News">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-color.png">
+
+        <!-- Page Title -->
+        <title>Graham Financial News</title>
+
+        <!-- Preload fonts to improve webpage loading speed -->
+        <link rel="preload" href="/assets/fonts/LibreBaskerville-Bold.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="/assets/fonts/Montserrat-Light.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="/assets/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
+        <link rel="preload" href="/assets/fonts/Montserrat-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- JavaScript -->
+        <script src="/js/api_key.js" defer></script>
+        <script src="/js/posts.js" defer></script>
+        <script src="/js/index.js" defer></script>
+        <script src="/js/popularNews.js" defer></script>
+
+    </head>
+
+    <body>
+        <div class="container" id="main-container">
+            <!-- Header -->
+            <header id="header">
+                <div class="logo" id="logo">
+                    <a href="index.html">
+                        <img src="images/companylogo/graham-logo-white-on-transparent-background.png" alt="Graham news">
+                    </a>
+                </div>
+                <nav class="main-navigation" id="nav-bar">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="" class="navbar-item">About</a>
+                    <a href="" class="navbar-item">Events</a>
+                    <a href="" class="navbar-item">Contact us</a>
+                    <a href="report.html" class="navbar-item">Report</a>
+                    <img src="/assets/icons/bars-solid.svg" alt="menu icon" id="nav-icon" width="20" height="20">
+                    <img src="/assets/icons/xmark-solid.svg" alt="close menu icon" id="close-icon" width="20"
+                        height="20">
+                </nav>
+            </header>
+            <!-- End of Header -->
+
+            <main>
+                <!-- Featured news section -->
+                <section class="featured-news">
+                    <h1 class="category-title">Featured</h1>
+                    <!-- Slideshow container -->
+                    <div class="carousel-container" id="carousel-container">
+                        <!-- Slides with images and text -->
+                        <!-- Slides to be loaded using JavaScript in the scripts.js file -->
+                        <!-- Arrows for moving to the next and previous slides -->
+                        <a class="prev" id="prev-button">&#10094;</a>
+                        <a class="next" id="next-button">&#10095;</a>
+                    </div>
+                </section>
+                <!-- End of featured news section -->
+
+                <!-- Other news section -->
+                <section class="news-categories">
+                    <div class="news-articles">
+                        <div class="left-news-category" id="tech-category">
+                            <h1 class="section-heading">Technology</h1>
+                            <!-- Content to be added using JavaScript in the scripts.js file -->
+                        </div>
+                        <div class="middle-news-category" id="finance-category">
+                            <h1 class="section-heading">Banking & Finance</h1>
+                            <!-- Content to be added using JavaScript in the scripts.js file -->
+                        </div>
+                    </div>
+                    <div class="right-news-category">
+                        <div class="news-list">
+                            <h3 class="section-heading">Most popular</h3>
+                            <div class="popular-news-list" id="popular-news">
+                                <!-- Content to be added using JavaScript in the scripts.js file -->
+                            </div>
+                        </div>
+                        <div class="news-videos">
+                            <h3 class="section-heading">Videos</h3>
+                            <div class="videos">
+                                <iframe src="https://www.youtube.com/embed/MVeDvurX814"
+                                    title="Mr. Anthony Chin - CEO of Maruhan Japan Bank, Lao at IFM Awards 2019"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div>
+                    <button id="load-more-btn">Load more</button>
+                </div>
+                <!-- End of other news section -->
+            </main>
+
+            <!-- Footer section -->
+            <footer>
+                <div class="left-footer-section">
+                    <!-- Links to other pages in the website -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="middle-footer-section">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="right-footer-section">
+                    <!-- Input box for visitor to subscribe to newsletter by email -->
+                    <p>Get our newsletter</p>
+                    <label>
+                        <input type="email" name="user-email" id="user-email" placeholder="Enter your email">
+                    </label>
+                    <button type="submit">Subscribe</button>
+                    <!-- Links to social media pages -->
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+                <div class="code-validators">
+                    <h4>Code validators and accessibility checkers</h4>
+                    <a href="https://validator.w3.org/nu/" target="_blank" class="validator">HTML Checker</a>
+                </div>
+            </footer>
+            <!-- End of footer section -->
+        </div>
+    </body>
+
+</html>

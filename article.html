@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Responsive/Encoding Metas -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO Meta tags -->
+        <meta name="author" content="Peter Kingori Ndegwa">
+        <meta name="description" content="Financial, Business, Investment and Technology News">
+        <meta name="keywords" content="news, financial, business, investment, technology">
+        <meta name="robots" content="index, follow">
+        <meta name="og:title" property="og:title" content="Graham Financial News">
+        <meta name="og:description" property="og:description"
+            content="Financial, Business, Investment and Technology News">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-color.png">
+
+        <!-- Page Title -->
+        <title id="page-title"></title>
+
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/article.css">
+
+        <!-- JavaScript -->
+        <script src="/js/fullArticles.js" defer></script>
+        <script src="/js/popularNews.js" defer></script>
+        <script src="/js/article.js" defer></script>
+
+    </head>
+
+    <body>
+        <div class="container" id="main-container">
+            <!-- Header -->
+            <header id="header">
+                <div class="logo" id="logo">
+                    <a href="index.html">
+                        <img src="images/companylogo/graham-logo-white-on-transparent-background.png" alt="Graham news">
+                    </a>
+                </div>
+                <nav class="main-navigation" id="nav-bar">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="#" class="navbar-item">About</a>
+                    <a href="#" class="navbar-item">Events</a>
+                    <a href="#" class="navbar-item">Contact us</a>
+                    <a href="report.html" class="navbar-item">Report</a>
+                    <img src="/assets/icons/bars-solid.svg" alt="menu icon" id="nav-icon" width="20" , height="20">
+                    <img src="/assets/icons/xmark-solid.svg" alt="close menu icon" id="close-icon" width="20" ,
+                        height="20">
+                </nav>
+            </header>
+            <!-- End of Header -->
+
+            <!-- Article content section -->
+            <main class="content">
+                <section class="article-data">
+                    <!-- Content to be added using JavaScript in the article.js file -->
+                    <h3 class="section-heading" id="article-author"></h3>
+                    <p id="article-date"></p>
+                    <a href="" target="_blank" id="original-source">Original source</a>
+                </section>
+
+                <section class="article-content" id="article">
+                    <!-- Content to be added using JavaScript in the article.js file -->
+                </section>
+
+                <section class="related-news" id="related-news-section">
+                    <h3 class="section-heading">Related</h3>
+                    <div class="related-news-list" id="related-news">
+                        <!-- Content to be added using JavaScript in the article.js file -->
+                    </div>
+                </section>
+            </main>
+            <!-- End of article content -->
+
+            <!-- Footer section -->
+            <footer>
+                <div class="left-footer-section">
+                    <!-- Links to other pages in the website -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="middle-footer-section">
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Search</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="right-footer-section">
+                    <!-- Input box for visitor to subscribe to newsletter by email -->
+                    <p>Get our newsletter</p>
+                    <label>
+                        <input type="email" name="user-email" id="user-email" placeholder="Enter your email">
+                    </label>
+                    <button type="submit">Subscribe</button>
+                    <!-- Links to social media pages -->
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of footer section -->
+        </div>
+    </body>
+
+</html>

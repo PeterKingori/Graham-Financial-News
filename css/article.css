@@ -1,0 +1,47 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 40px;
+}
+
+.article-data {
+    flex-basis: 20%;
+    padding-top: 11em;
+}
+
+.article-content {
+    flex-basis: 55%;
+}
+
+.article-content h2 {
+    font-size: 2em;
+}
+
+.article-subheading {
+    margin: 16px 0;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.article-content img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    margin: 10px 0 16px 0;
+}
+
+.article-content p.content-paragraph {
+    margin: 10px 0;
+    line-height: 1.7em;
+    font-size: 1em;
+}
+
+.related-news {
+    flex-basis: 25%;
+    padding-top: 11em;
+}
+
+.related-news-list {
+    padding-inline-start: 12px;
+}

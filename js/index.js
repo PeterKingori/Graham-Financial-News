@@ -232,7 +232,7 @@ let requestUrl = "https://newsapi.org/v2/top-headlines?country=us&category=busin
 
 // Object with API authorisation header and content type header
 const REQUEST_HEADERS = {
-  "X-Api-Key": api_key,
+  "x-api-key": api_key,
 };
 
 // Create posts for each news article
@@ -254,7 +254,7 @@ function createTechPosts(articles) {
 const getTechNews = async () => {
   let response = await fetch(requestUrl, { mode: "no-cors", method: "POST", headers: REQUEST_HEADERS });
   if (!response.ok) {
-    console.log("Error while fetching data: ", error);
+    console.log("Error while fetching data.");
   }
   const data = await response.json();
   createTechPosts(data.articles);

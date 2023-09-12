@@ -1,43 +1,8 @@
+// Run the functions to fetch the news from the api as soon as the window loads
 window.onload = () => {
   getTechNews();
+  getBusinessNews();
 };
-
-// STICKY NAVIGATION BAR
-// Access the navigation bar
-let navBar = document.getElementById("nav-bar");
-
-// When the user scrolls the page add the sticky class to the navbar and remove it when you leave the scroll position
-window.onscroll = function () {
-  stickyNavbar();
-};
-let header = document.getElementById("header");
-let navbarPosition = navBar.getBoundingClientRect().top;
-function stickyNavbar() {
-  if (window.scrollY >= navbarPosition) {
-    navBar.classList.add("sticky-navbar");
-    header.classList.add("navbarOffsetMargin");
-    header.classList.add("header-sticky-navbar");
-  } else {
-    navBar.classList.remove("sticky-navbar");
-    header.classList.remove("navbarOffsetMargin");
-    header.classList.remove("header-sticky-navbar");
-  }
-}
-
-// Show the navbar menu when the hamburger menu icon is clicked on small screens
-let mainContainer = document.getElementById("main-container");
-let logo = document.getElementById("logo");
-let navIcon = document.getElementById("nav-icon");
-let closeIcon = document.getElementById("close-icon");
-
-navIcon.addEventListener("click", toggleResponsiveNavigationMenu, false);
-closeIcon.addEventListener("click", toggleResponsiveNavigationMenu, false);
-
-function toggleResponsiveNavigationMenu() {
-  mainContainer.classList.toggle("responsive");
-  logo.classList.toggle("responsive");
-  navBar.classList.toggle("responsive");
-}
 
 //===================================================================
 //===================================================================
@@ -215,49 +180,65 @@ function openFinanceArticle(event, index) {
 
 //===================================================================
 //===================================================================
-
-// LOADING ARTICLES FROM NewsAPI
+// LOADING ARTICLES FROM a news api
 
 const loadMore = document.getElementById("load-more-btn");
 loadMore.addEventListener("click", function () {
   getTechNews();
+  getBusinessNews();
 });
 
 // Country to fetch news from
 const country = "gb";
 // Category of news to fetch
-let category = "technology";
+let category;
 // Request url
-// let requestUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=${api_key}`;
-let requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${api_key}`;
-
-// Object with API authorisation header and content type header
-// const REQUEST_HEADERS = {
-//   "x-api-key": api_key,
-// };
+let requestUrl;
 
 // Create posts for each news article
-function createTechPosts(articles) {
+function createPosts(articles, htmlSection) {
   articles.forEach(function (article) {
     let articleOutput = document.createElement("article");
     articleOutput.classList.add("news-post-item");
     articleOutput.innerHTML = `<img src=${article.image || "./images/articleImages/default-news-image.jpg"} alt=${
       article.title
     } class="post-item-image">
-    <p class="post-item-date">${article.publishedAt}</p>
+    <p class="post-item-date">${new Date(article.publishedAt).toDateString()}</p>
     <a href="${article.url}" class="post-link tech-post-link" target="_blank">${article.title}</a>
     <p class="post-item-text">${article.description}</p>`;
-    techCategory.appendChild(articleOutput);
+    htmlSection.appendChild(articleOutput);
   });
 }
 
 // API call
 const getTechNews = async () => {
+  category = "technology";
+  requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${api_key}`;
   let response = await fetch(requestUrl);
   if (!response.ok) {
     console.log("Error while fetching data.");
+    let errorMsg = document.createElement("h3");
+    errorMsg.style.color = "red";
+    errorMsg.innerHTML = "Error while fetching more data";
+    techCategory.appendChild(errorMsg);
     return;
   }
   let data = await response.json();
-  createTechPosts(data.articles);
+  createPosts(data.articles, techCategory);
+};
+
+const getBusinessNews = async () => {
+  category = "business";
+  requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${api_key}`;
+  let response = await fetch(requestUrl);
+  if (!response.ok) {
+    console.log("Error while fetching data.");
+    let errorMsg = document.createElement("h3");
+    errorMsg.style.color = "red";
+    errorMsg.innerHTML = "Error while fetching more data";
+    financeCategory.appendChild(errorMsg);
+    return;
+  }
+  let data = await response.json();
+  createPosts(data.articles, financeCategory);
 };

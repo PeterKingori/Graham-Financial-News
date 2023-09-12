@@ -228,7 +228,7 @@ const country = "us";
 // Category of news to fetch
 let category = "technology";
 // Request url
-let requestUrl = "https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5";
+let requestUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=5&apiKey=${api_key}`;
 
 // Object with API authorisation header and content type header
 const REQUEST_HEADERS = {
@@ -252,10 +252,10 @@ function createTechPosts(articles) {
 
 // API call
 const getTechNews = async () => {
-  let response = await fetch(requestUrl, { mode: "no-cors", method: "POST", headers: REQUEST_HEADERS });
+  let response = await fetch(requestUrl);
   if (!response.ok) {
     console.log("Error while fetching data.");
   }
-  const data = await response.json();
+  let data = await response.json();
   createTechPosts(data.articles);
 };

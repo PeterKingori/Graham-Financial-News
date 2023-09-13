@@ -8,7 +8,8 @@ const fullArticles = [
     author: "Prabuddha Ghosh",
     source: "https://internationalfinance.com/business-leader-week-meet-amin-hassan-nasser-ceo-aramco/",
     title: "Business Leader of the Week: Meet Amin Hassan Nasser, CEO of Aramco",
-    text: "Amin Hassan Nasser's stint with Saudi Aramco started in 1982 as an engineer in the oil production department, following which he went on to work in the venture's drilling and reservoir wing",
+    description:
+      "Amin Hassan Nasser's stint with Saudi Aramco started in 1982 as an engineer in the oil production department, following which he went on to work in the venture's drilling and reservoir wing",
     fulltext: `Saudi Aramco or the Saudi Arabian Oil Group, is a Saudi Arabian public company, whose operational expertise lies in the field of petroleum and natural gas. As of 2022, the venture holds the rank of the world&#39;s second-largest company by revenue, as it has dominated media headlines by repeatedly achieving the largest annual profits in global corporate history.
 
     Saudi Aramco has both the world&#39;s second-largest proven crude oil reserves, at over 270 billion barrels (43 billion cubic metres) and the largest daily oil production tally among all oil-producing companies.
@@ -59,7 +60,7 @@ const fullArticles = [
     author: "International Finance Business Desk",
     source: "https://internationalfinance.com/fake-customer-service-agents-fox8-botnets-scammers-run-riot/",
     title: "Fake customer service agents, “Fox8” botnets: Scammers run riot on X",
-    text: "X&#39;s terms and conditions do not state whether subscriber accounts are pre-vetted",
+    description: "X&#39;s terms and conditions do not state whether subscriber accounts are pre-vetted",
     fulltext: `Consumers complaining of poor customer service on X (rebranded Twitter) are being targeted by scammers after the Elon Musk-led micro-blogging platform changed its account verification process.
 
     Bank customers and airline passengers are among those being exposed to the risk of suffering due to phishing scams as these individuals complain to companies via X, stated a Guardian report, while adding that the fraudsters, masquerading as customer service agents, are responding under fake X handles and trick victims into disclosing their bank details to get a promised refund.
@@ -110,7 +111,8 @@ const fullArticles = [
     author: " Julie Charlestein",
     source: "https://www.worldfinance.com/wealth-management/real-life-succession-handing-over-the-keys",
     title: "Real-life Succession: handing over the keys",
-    text: "The endless power wrangling of TV drama Succession, which satirises billion-dollar dynasties, certainly makes for compelling viewing. But real-life negotiations for ownership and control often requires cooler heads",
+    description:
+      "The endless power wrangling of TV drama Succession, which satirises billion-dollar dynasties, certainly makes for compelling viewing. But real-life negotiations for ownership and control often requires cooler heads",
     fulltext: `The final season of HBO&#39;s hit show Succession captivated audiences across the world this year. Each week, millions around the globe tuned in to catch up on the latest backstabbing and in-fighting among the Roy siblings &ndash; the super-rich heirs to a media empire and one of the most deeply dysfunctional families on TV. The Roys&#39; machiavellian scheming and power-hungry plotting kept audiences hooked over the course of the show&#39;s four-season run. But, while the cut-throat world of Succession certainly draws on real-life influences at times, the reality of managing leadership change is thankfully far more civilised &ndash; even if it does pose its own challenges.
 
     In my own experience, the negotiations resulting in my being named CEO of the family business &ndash; Premier Dental &ndash; were among the most difficult processes of my professional life. These negotiations saw my father relinquish his role as CEO and owner and move into a new status as chairman of the board. At this time, decisions had to be made that many family businesses find themselves wrestling with at some time &ndash; issues such as how ownership shares will be divvied up among various members of the family, how those shares will be paid for or otherwise transferred from one owner to another, how important decisions about the business will be made, and how long the transition from one generation to the next will take, and more. With this experience of succession planning under my belt, there are five essential tips I would offer any family business looking to navigate a change in leadership and governance.
@@ -135,7 +137,8 @@ const fullArticles = [
     author: "International Finance Business Desk",
     source: "https://internationalfinance.com/streaming-surpasses-traditional-tv-with-record-viewership-tally/",
     title: "Streaming surpasses traditional TV with record 38.7% viewership tally",
-    text: "According to Nielsen data, the high volume of viewing overall increased streaming's proportion of TV to 38.7%, setting a new record",
+    description:
+      "According to Nielsen data, the high volume of viewing overall increased streaming's proportion of TV to 38.7%, setting a new record",
     fulltext: `According to a new survey, modern OTT platforms have defeated traditional TV as streaming accounted for a record 38.7% of all TV viewing in July 2023, with bought titles exceeding new originals in the United States.
     
     According to Nielsen data, the high volume of viewing overall increased streaming&#39;s proportion of TV to 38.7%, setting a new record. Amazon Prime Video, Netflix, and YouTube all reached record highs.
@@ -176,7 +179,8 @@ const fullArticles = [
     author: "International Finance Business Desk",
     source: "https://internationalfinance.com/mekha-powering-digital-transformation-thai-economy/",
     title: "Mekha V: Powering digital transformation of Thai economy",
-    text: "Mekha V leverages cutting-edge technology and a highly skilled team to deliver tailored solutions that meet each client's unique needs",
+    description:
+      "Mekha V leverages cutting-edge technology and a highly skilled team to deliver tailored solutions that meet each client's unique needs",
     fulltext: `Mekha V, which is Thailand&#39;s leading cloud innovation provider and specializes in the areas of AI, robotics and digitalization, believes in empowering the country&#39;s technology intelligence for a sustainable future.
 
     Mekha V, which emerged from the merger of Mekha Tech and ReAcc and is the flagship tech company for the PTT Group, is driven by the mission of spearheading Thailand&#39;s industrial innovation and digital transformation.
@@ -219,7 +223,8 @@ const fullArticles = [
     author: "International Finance Business Desk",
     source: "https://internationalfinance.com/new-development-bank-rand-denominated-bonds-expert-hails-move/",
     title: "New Development Bank sells rand-denominated bonds for first time, expert hails move",
-    text: "In August 2023, the New Development Bank reportedly issued both R1 billion five-year bond and R500 million three-year note, as the auction attracted R2.67 billion in bids",
+    description:
+      "In August 2023, the New Development Bank reportedly issued both R1 billion five-year bond and R500 million three-year note, as the auction attracted R2.67 billion in bids",
     fulltext: `The Shanghai-based New Development Bank (NDB), formed by BRICS countries in 2014, has conducted its first sale of bonds denominated in South African currency Rand, amid the background of emerging markets seeking greater access to local currency funding.
 
     In August 2023, the NDB reportedly issued both R1 billion (USD 53.1 million) five-year bond and R500 million three-year note, as the auction attracted R2.67 billion in bids.
@@ -258,7 +263,7 @@ const fullArticles = [
     author: "Prabuddha Ghosh",
     source: "https://internationalfinance.com/meet-starling-bank-financial-institution-with-physical-branches/",
     title: "Start-up of the Week: Meet &lsquo;Starling Bank&rsquo;, a financial institution with no physical branches",
-    text: "Starling Bank customers can send money to 36 countries in 20 currencies",
+    description: "Starling Bank customers can send money to 36 countries in 20 currencies",
     fulltext: `Ever heard about a bank operating without a physical branch? Well, Welsh businesswoman Anne Boden has made the idea workable through her venture &#39;Starling Bank&#39;, which was founded in 2014.
 
     On May 2023, the United Kingdom-based challenger bank reported a record pre-tax profit of 195 million pounds, a six-fold increase from the same period in 2022. Starling Bank also saw Boden stepping down from the chief executive&#39;s role, as she believed that Starling should not continue to have a shareholder as its boss. She still owns 4.9% of the company, apart from keeping a seat on the board as a non-executive director.

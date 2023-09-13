@@ -79,6 +79,10 @@ p {
     font-size: 14px;
 }
 
+a {
+    font-family: Montserrat;
+}
+
 main {
     padding: 20px;
     width: 100%;
@@ -348,17 +352,47 @@ a.post-link {
 
 /* End of other news section styles */
 
+/* Styling the button to load more news */
+.load-more {
+    width: 100%;
+    text-align: center;
+}
+
+#load-more-btn {
+    width: 60%;
+    background-color: #001f3f;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#load-more-btn:hover {
+    cursor: pointer;
+}
+
 /* ===================================================== */
 /* Footer section styles */
 footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 20px;
     align-items: center;
     width: 100%;
     max-width: 100%;
     padding: 50px 0;
     background-color: #001f3f;
+}
+
+.left-footer-section,
+.middle-footer-section {
+    flex-basis: 30%;
+    margin-left: 20px;
+}
+
+.right-footer-section {
+    flex-basis: 40%;
 }
 
 .left-footer-section ul,
@@ -369,10 +403,47 @@ footer {
 .left-footer-section ul li a,
 .middle-footer-section ul li a,
 footer p,
-.social-links a,
-.code-validators,
-.code-validators a {
+.social-links a {
     color: #fff;
+}
+
+.left-footer-section ul li,
+.middle-footer-section ul li,
+footer p,
+.social-links {
+    margin: 12px 0;
+}
+
+.right-footer-section p {
+    font-size: 1.3em;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+input[type=email] {
+    width: 250px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-email-button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-email-button:hover {
+    background-color: #001f3f;
+    color: white;
+    border: 1px solid white;
 }
 
 /* End of footer section styles */
@@ -463,8 +534,24 @@ footer p,
     }
 
     .videos iframe {
-        width: 240px;
+        width: 100%;
         height: 240px;
+    }
+
+    /* Styles for the footer */
+    input[type=email] {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 10px 10px 0;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .submit-email-button {
+        width: 90%;
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 10px 10px 0;
     }
 }
 
@@ -633,8 +720,30 @@ footer p,
         flex-direction: column;
         align-items: start;
         padding: 20px 20px;
-        gap: 20px;
     }
 
+    .left-footer-section,
+    .middle-footer-section,
+    .right-footer-section {
+        flex-basis: 100%;
+    }
 
+    .right-footer-section {
+        margin-left: 20px;
+    }
+
+    input[type=email] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 10px 10px 0;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .submit-email-button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 10px 10px 0;
+    }
 }

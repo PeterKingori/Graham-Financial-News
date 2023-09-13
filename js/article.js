@@ -7,9 +7,13 @@ const id = Number(urlParams.get("page"));
 // Find the article that corresponds to the id in the URL from the fullArticles.js file
 const article = fullArticles.find((article) => article.id == id);
 // Destructure the properties of an article
-const { image, imageAlt, date, author, source, title, text, fulltext } = article;
+const { image, imageAlt, date, author, source, title, description, fulltext } = article;
 // Set the title in the browser tab to the article title
 document.getElementById("page-title").innerHTML = title;
+
+// Set the article title and description
+document.getElementById("article-title").innerHTML = `<h2>${title}</h2>
+    <p class="article-subheading">${description}</p>`;
 
 // Set the article author and published date
 document.getElementById("article-author").innerHTML = `Author: ${author}`;
@@ -20,9 +24,8 @@ articleLink.setAttribute("href", source);
 // ARTICLE CONTENT
 // Create a HTML article element and add other elements and content
 let singleArticle = document.createElement("article");
-singleArticle.innerHTML = `<h2>${title}</h2>
-    <p class="article-subheading">${text}</p>
-    <img src=${image} alt=${imageAlt} width="440">`;
+singleArticle.classList.add("article");
+singleArticle.innerHTML = `<img src=${image} alt=${imageAlt} width="440">`;
 
 const contentFragment = document.createDocumentFragment();
 // Split the full text in the article into smaller paragraphs

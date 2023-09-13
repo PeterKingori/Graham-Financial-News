@@ -1,37 +1,54 @@
+/* Styles for the whole article page */
 .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+}
+
+.article-content {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    padding-top: 40px;
 }
 
 .article-data {
     flex-basis: 20%;
-    padding-top: 11em;
 }
 
-.article-content {
+p#article-date {
+    margin-bottom: 10px;
+}
+
+#article {
     flex-basis: 55%;
 }
 
-.article-content h2 {
+#article-title {
+    margin-bottom: 0;
+    width: 58%;
+    margin: 0 auto;
+}
+
+#article-title h2 {
     font-size: 2em;
 }
 
-.article-subheading {
+p.article-subheading {
     margin: 16px 0;
     font-size: 1.1em;
     color: #555;
 }
 
-.article-content img {
+#article img {
+    display: inline-block;
     width: 100%;
     max-width: 100%;
     object-fit: cover;
-    margin: 10px 0 16px 0;
+    margin: 0 0 16px 0;
 }
 
-.article-content p.content-paragraph {
+#article p.content-paragraph {
     margin: 10px 0;
     line-height: 1.7em;
     font-size: 1em;
@@ -39,9 +56,83 @@
 
 .related-news {
     flex-basis: 25%;
-    padding-top: 11em;
 }
 
 .related-news-list {
     padding-inline-start: 12px;
+}
+
+/* Styles for the article page for screen sizes between 413px and 768px, e.g for tablets */
+@media screen and (min-width:413px) and (max-width: 768px) {
+    .content {
+        padding-top: 20px;
+        gap: 0;
+    }
+
+    #article-title {
+        width: 100%;
+    }
+
+    .article-content {
+        flex-direction: column;
+    }
+
+    .article-data,
+    #article,
+    .related-news {
+        flex-basis: 100%;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #article img {
+        align-self: center;
+        width: 60%;
+    }
+
+    #article p.content-paragraph {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .content {
+        padding-top: 10px;
+        gap: 0;
+    }
+
+    #article-title {
+        width: 100%;
+    }
+
+    #article-title h2 {
+        font-size: 1.7em;
+    }
+
+    .article-content {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .article-data,
+    #article,
+    .related-news {
+        flex-basis: 100%;
+    }
+
+    .article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #article img {
+        align-self: center;
+    }
+
+    #article p.content-paragraph {
+        margin: 5px 0;
+    }
 }

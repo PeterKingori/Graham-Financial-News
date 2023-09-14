@@ -30,14 +30,10 @@
 
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/aboutus.css">
 
         <!-- JavaScript -->
-        <script src="./js/api_key.js" defer></script>
-        <script src="./js/posts.js" defer></script>
-        <script src="./js/index.js" defer></script>
-        <script src="./js/popularNews.js" defer></script>
         <script src="./js/stickyNavbar.js" defer></script>
-
     </head>
 
     <body>
@@ -65,54 +61,58 @@
 
             <!-- Main content -->
             <main>
-                <!-- Featured news section -->
-                <section class="featured-news">
-                    <h1 class="category-title">Featured</h1>
-                    <!-- Slideshow container -->
-                    <div class="carousel-container" id="carousel-container">
-                        <!-- Slides with images and text -->
-                        <!-- Slides to be loaded using JavaScript in the scripts.js file -->
-                        <!-- Arrows for moving to the next and previous slides -->
-                        <a class="prev" id="prev-button">&#10094;</a>
-                        <a class="next" id="next-button">&#10095;</a>
-                    </div>
-                </section>
-                <!-- End of featured news section -->
-
-                <!-- Other news section -->
-                <section class="news-categories">
-                    <div class="news-articles">
-                        <div class="left-news-category" id="tech-category">
-                            <h1 class="section-heading">Technology</h1>
-                            <!-- Content to be added using JavaScript in the scripts.js file -->
+                <h1 class="about-heading">About us</h1>
+                <div class="about-content">
+                    <!-- Top section with information about the company -->
+                    <section class="top-section">
+                        <div class="company-image">
+                            <img src="./images/company-image-2.jpg" alt="company image">
                         </div>
-                        <div class="middle-news-category" id="finance-category">
-                            <h1 class="section-heading">Banking & Finance</h1>
-                            <!-- Content to be added using JavaScript in the scripts.js file -->
+                        <div class="about-company">
+                            <h2 class="about-title">The financial voice of Stars Hollow</h2>
+                            <p class="about-paragraph">Graham Financial News is a print and online magazine that caters
+                                to
+                                Stars Hollows residents interested in international finance and business news.</p>
+                            <p class="about-paragraph">Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ad officiis ea aut illo qui fuga
+                                ullam optio ratione, eius doloremque dicta temporibus voluptatibus adipisci doloribus
+                                fugit quod voluptatum libero perspiciatis?</p>
                         </div>
-                    </div>
-                    <div class="right-news-category">
-                        <div class="news-list">
-                            <h3 class="section-heading">Most popular</h3>
-                            <div class="popular-news-list" id="popular-news">
-                                <!-- Content to be added using JavaScript in the scripts.js file -->
-                            </div>
+                    </section>
+                    <!-- End of top section -->
+                    <section class="middle-section">
+                        <!-- Middle section with information about the team -->
+                        <div class="about-company">
+                            <h2 class="about-title">The team</h2>
+                            <p class="about-paragraph">The people bringing the best of international news to the
+                                discerning audience of Stars Hollow.</p>
+                            <p class="team-member"><span class="team-position">Director and Publisher:</span> Usman Cole
+                            </p>
+                            <p class="team-member"><span class="team-position">Editor-in-Chief:</span> Rory Gilmore</p>
+                            <p class="team-member"><span class="team-position">Marketing Manager:</span> Eloise Hawkins
+                            </p>
+                            <p class="team-member"><span class="team-position">Design:</span> Denise Hall</p>
+                            <p class="team-member"><span class="team-position">Web developer:</span> Iqra James</p>
                         </div>
-                        <div class="news-videos">
-                            <h3 class="section-heading">Videos</h3>
-                            <div class="videos">
-                                <iframe src="https://www.youtube.com/embed/MVeDvurX814"
-                                    title="Mr. Anthony Chin - CEO of Maruhan Japan Bank, Lao at IFM Awards 2019"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
+                        <div class="company-image">
+                            <img src="./images/company-image-1.jpg" alt="company image">
                         </div>
-                    </div>
-                </section>
-                <div class="load-more">
-                    <button id="load-more-btn">Load more</button>
+                    </section>
+                    <!-- End of middle section -->
+                    <section class="bottom-section">
+                        <!-- The bottom section with more information about the company -->
+                        <p class="about-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                            fuga, sit eum quia dolore quo totam ab aut. Architecto impedit quidem ab voluptas quisquam
+                            magni et animi, iure eum repellendus aliquid vel cum est minima enim assumenda dolorum
+                            suscipit minus accusantium repellat commodi veritatis praesentium. Ullam eligendi ab veniam
+                            velit?</p>
+                        <p class="about-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+                            fuga, sit eum quia dolore quo totam ab aut. Architecto impedit quidem ab voluptas quisquam
+                            magni et animi, iure eum repellendus aliquid vel cum est minima enim assumenda dolorum
+                            suscipit minus accusantium repellat commodi veritatis praesentium. Ullam eligendi ab veniam
+                            velit?</p>
+                    </section>
                 </div>
-                <!-- End of other news section -->
             </main>
             <!-- End of main content -->
 

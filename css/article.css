@@ -62,6 +62,10 @@ p.article-subheading {
     padding-inline-start: 12px;
 }
 
+/* ===================================================== */
+/* ===================================================== */
+/* Media queries */
+
 /* Styles for the article page for screen sizes between 413px and 768px, e.g for tablets */
 @media screen and (min-width:413px) and (max-width: 768px) {
     .content {
@@ -98,6 +102,7 @@ p.article-subheading {
     }
 }
 
+/* Styles for screen sizes below 412px, typically mobile phones */
 @media screen and (max-width: 412px) {
     .content {
         padding-top: 10px;

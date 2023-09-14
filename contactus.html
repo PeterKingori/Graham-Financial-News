@@ -20,7 +20,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-color.png">
 
         <!-- Page Title -->
-        <title>Graham Financial News</title>
+        <title>Contact us - Graham Financial News</title>
 
         <!-- Preload fonts to improve webpage loading speed -->
         <link rel="preload" href="./assets/fonts/LibreBaskerville-Bold.ttf" as="font" type="font/ttf" crossorigin>
@@ -30,14 +30,10 @@
 
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/contactus.css">
 
         <!-- JavaScript -->
-        <script src="./js/api_key.js" defer></script>
-        <script src="./js/posts.js" defer></script>
-        <script src="./js/index.js" defer></script>
-        <script src="./js/popularNews.js" defer></script>
         <script src="./js/header.js" defer></script>
-
     </head>
 
     <body>
@@ -69,54 +65,30 @@
 
             <!-- Main content -->
             <main>
-                <!-- Featured news section -->
-                <section class="featured-news">
-                    <h1 class="category-title">Featured</h1>
-                    <!-- Slideshow container -->
-                    <div class="carousel-container" id="carousel-container">
-                        <!-- Slides with images and text -->
-                        <!-- Slides to be loaded using JavaScript in the scripts.js file -->
-                        <!-- Arrows for moving to the next and previous slides -->
-                        <a class="prev" id="prev-button">&#10094;</a>
-                        <a class="next" id="next-button">&#10095;</a>
-                    </div>
-                </section>
-                <!-- End of featured news section -->
+                <h1 class="contact-heading">Contact us</h1>
+                <div class="contact-content">
+                    <p>Where you can visit us or send your enquiries to</p>
+                    <section class="general-enquiries">
+                        <h2 class="contact-subheading">General enquiries</h2>
+                        <address>
+                            Graham Financial News <br>
+                            Maple Tree Lane <br>
+                            Stars Hollow <br>
+                            Connecticut <br>
+                            US <br>
+                        </address>
+                        <p><span class="contact-type">Tel:</span> +11 (0) 123 456</p>
+                        <p><span class="contact-type">Email:</span> <span
+                                class="contact-email">enquiries@grahamnews.com</span></p>
+                    </section>
 
-                <!-- Other news section -->
-                <section class="news-categories">
-                    <div class="news-articles">
-                        <div class="left-news-category" id="tech-category">
-                            <h1 class="section-heading">Technology</h1>
-                            <!-- Content to be added using JavaScript in the scripts.js file -->
-                        </div>
-                        <div class="middle-news-category" id="finance-category">
-                            <h1 class="section-heading">Banking & Finance</h1>
-                            <!-- Content to be added using JavaScript in the scripts.js file -->
-                        </div>
-                    </div>
-                    <div class="right-news-category">
-                        <div class="news-list">
-                            <h3 class="section-heading">Most popular</h3>
-                            <div class="popular-news-list" id="popular-news">
-                                <!-- Content to be added using JavaScript in the scripts.js file -->
-                            </div>
-                        </div>
-                        <div class="news-videos">
-                            <h3 class="section-heading">Videos</h3>
-                            <div class="videos">
-                                <iframe src="https://www.youtube.com/embed/MVeDvurX814"
-                                    title="Mr. Anthony Chin - CEO of Maruhan Japan Bank, Lao at IFM Awards 2019"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="load-more">
-                    <button id="load-more-btn">Load more</button>
+                    <section class="media-enquiries">
+                        <h2 class="contact-subheading">Media enquiries</h2>
+                        <p>All enquiries regarding the media content should be first directed to:</p>
+                        <p>Eloise Hawkins</p>
+                        <p class="contact-email">eloise.hawkins@grahamfinancial.com</p>
+                    </section>
                 </div>
-                <!-- End of other news section -->
             </main>
             <!-- End of main content -->
 

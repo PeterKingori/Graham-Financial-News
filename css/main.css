@@ -98,7 +98,13 @@ section {
 /* Header styles */
 header {
     background-color: #001f3f;
-    padding-top: 30px;
+    padding-top: 15px;
+}
+
+#date {
+    color: white;
+    margin-bottom: 15px;
+    padding-left: 30px;
 }
 
 /* Style the company logo at the top */
@@ -576,9 +582,16 @@ input[type=email] {
         align-items: center;
     }
 
+    #date {
+        font-size: 12px;
+        padding-left: 15px;
+        margin-right: 10px;
+        width: 100%;
+    }
+
     .logo {
         text-align: left;
-        margin: 20px;
+        margin: 20px 0px;
     }
 
     .logo img {
@@ -605,6 +618,10 @@ input[type=email] {
         left: 0;
         width: 100vw;
         height: 100vh;
+    }
+
+    #date.responsive {
+        display: none;
     }
 
     .logo.responsive {

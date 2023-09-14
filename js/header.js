@@ -1,3 +1,11 @@
+// TIME SHOWING ON HEADER
+document.getElementById("date").innerHTML = new Date().toLocaleDateString("en-us", {
+  weekday: "long",
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+
 // STICKY NAVIGATION BAR
 // Access the navigation bar
 let navBar = document.getElementById("nav-bar");
@@ -20,8 +28,10 @@ function stickyNavbar() {
   }
 }
 
+// FULL NAVBAR MENU ON MOBILE PHONES
 // Show the navbar menu when the hamburger menu icon is clicked on small screens
 let mainContainer = document.getElementById("main-container");
+let date = document.getElementById("date");
 let logo = document.getElementById("logo");
 let navIcon = document.getElementById("nav-icon");
 let closeIcon = document.getElementById("close-icon");
@@ -31,6 +41,7 @@ closeIcon.addEventListener("click", toggleResponsiveNavigationMenu, false);
 
 function toggleResponsiveNavigationMenu() {
   mainContainer.classList.toggle("responsive");
+  date.classList.toggle("responsive");
   logo.classList.toggle("responsive");
   navBar.classList.toggle("responsive");
 }

@@ -1,4 +1,8 @@
-// Array with list of most popular article titles
+/* Array with list of most popular article titles. These topic titles
+were taken from the World Finance magazine website available
+at https://www.worldfinance.com/. They will not be the same as
+what you see on the day you read this
+*/
 const popularArticlesList = [
   "Financial inclusion in a digital world",
   "The gateway to an open financial market",

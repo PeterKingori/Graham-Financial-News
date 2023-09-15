@@ -1,0 +1,14 @@
+.contribute-heading {
+    text-align: center;
+    font-size: 80px;
+    margin: 10px 0px 40px 0px;
+}
+
+.contribute-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 80px;
+    width: 800px;
+    margin: 0 auto;
+}

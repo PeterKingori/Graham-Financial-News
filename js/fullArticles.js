@@ -1,3 +1,11 @@
+/* Arrays of articles that are shown as full articles on the website.
+The images and content are taken from the World Finance magazine available
+at https://www.worldfinance.com/ and the International Finance
+magazine available at https://internationalfinance.com/
+What you see here will not be the same as what you see
+on the website on the day you read this
+*/
+
 // Array with full articles
 const fullArticles = [
   {

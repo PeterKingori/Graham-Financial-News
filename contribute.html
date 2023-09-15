@@ -84,16 +84,22 @@
                     <p>Send your files via the form below.</p>
                     <form class="contribute-form">
                         <div class="sender-details">
-                            <input type="text" name="name" id="sender-name" placeholder="Your name" required>
-                            <input type="email" name="email" id="sender-email" placeholder="Your email" required>
+                            <label for="sender-name">
+                                <input type="text" name="name" id="sender-name" placeholder="Your name" required>
+                            </label>
+                            <label for="sender-email">
+                                <input type="email" name="email" id="sender-email" placeholder="Your email" required>
+                            </label>
                         </div>
                         <div class="sender-message">
                             <textarea name="message" id="sender-message" cols="40" rows="10" placeholder="Your message"
                                 required></textarea>
                         </div>
                         <div class="choose-file-button">
-                            <input type="file" name="file" id="sender-file" multiple="multiple" data-type="pdf|docx|doc"
-                                data-min="1" accept=".pdf, .docx, .doc">
+                            <label for="sender-file">
+                                <input type="file" name="file" id="sender-file" multiple="multiple"
+                                    data-type="pdf|docx|doc" data-min="1" accept=".pdf, .docx, .doc">
+                            </label>
                         </div>
                         <div class="accepted-docs">We accept pdf, docx or doc files only</div>
                         <div class="accept-terms">
@@ -129,7 +135,7 @@
                 <div class="right-footer-section">
                     <!-- Input box for visitor to subscribe to newsletter by email -->
                     <p>Get our newsletter</p>
-                    <label>
+                    <label for="user-email">
                         <input class="footer-email" type="email" name="user-email" id="user-email"
                             placeholder="Enter your email">
                     </label>

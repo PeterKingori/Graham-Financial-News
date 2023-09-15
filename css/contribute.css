@@ -33,8 +33,12 @@
     padding-top: 10px;
 }
 
+.sender-details label,
 .sender-details input {
     width: 100%;
+}
+
+.sender-details input {
     padding: 10px;
 }
 

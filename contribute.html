@@ -67,7 +67,42 @@
             <main>
                 <h1 class="contribute-heading">Contribute</h1>
                 <div class="contribute-content">
-
+                    <!-- The content for this section was inspired by similar content from
+                    the DailyArt magazine at https://www.dailyartmagazine.com/send-an-article/ -->
+                    <p>We invite you to contribute by writing for us regularly or publishing your article in our
+                        magazine.</p>
+                    <p>Here are the requirements:</p>
+                    <p>For us to publish your article, you have to send it to us for review. Please ensure you read the
+                        <a class="inline-link" href="">Writing Guidelines</a> before sending it. The article should be
+                        at least 500 words long and have at least 3 high-quality images and not more than 5.
+                    </p>
+                    <p>To join our writing team, please send us your résumé and an example article of 400 - 500 words.
+                        We will not publish or use your material without your permission. If you join the team you will
+                        be expected to write 1 article per week.</p>
+                    <p>Please note that you will not be compensated in any way for contributing an article or writing
+                        for the magazine regularly.</p>
+                    <p>Send your files via the form below.</p>
+                    <form class="contribute-form">
+                        <div class="sender-details">
+                            <input type="text" name="name" id="sender-name" placeholder="Your name" required>
+                            <input type="email" name="email" id="sender-email" placeholder="Your email" required>
+                        </div>
+                        <div class="sender-message">
+                            <textarea name="message" id="sender-message" cols="40" rows="10" placeholder="Your message"
+                                required></textarea>
+                        </div>
+                        <div class="choose-file-button">
+                            <input type="file" name="file" id="sender-file" multiple="multiple" data-type="pdf|docx|doc"
+                                data-min="1" accept=".pdf, .docx, .doc">
+                        </div>
+                        <div class="accepted-docs">We accept pdf, docx or doc files only</div>
+                        <div class="accept-terms">
+                            <input type="checkbox" name="accept-terms" id="accept-terms">
+                            <span class="accept-sentence">I agree to Graham Financial News <a href="">Terms of Use</a>
+                                and <a href="">Privacy Policy</a>.</span>
+                        </div>
+                        <button class="submit-button" type="submit">Submit</button>
+                    </form>
                 </div>
             </main>
             <!-- End of main content -->
@@ -95,7 +130,8 @@
                     <!-- Input box for visitor to subscribe to newsletter by email -->
                     <p>Get our newsletter</p>
                     <label>
-                        <input type="email" name="user-email" id="user-email" placeholder="Enter your email">
+                        <input class="footer-email" type="email" name="user-email" id="user-email"
+                            placeholder="Enter your email">
                     </label>
                     <button class="submit-email-button" type="submit">Subscribe</button>
                     <!-- Links to social media pages -->

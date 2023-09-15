@@ -430,10 +430,10 @@ footer p,
     gap: 30px;
 }
 
-input[type=email] {
+.footer-email {
     width: 250px;
     padding: 10px;
-    margin-right: 10px;
+    margin: 0px 0px 10px 0px;
     border-radius: 5px;
     border: none;
 }
@@ -450,7 +450,7 @@ input[type=email] {
     background-color: #001f3f;
     color: white;
     border: 1px solid white;
-    padding: 8px;
+    padding: 9px;
 }
 
 /* End of footer section styles */
@@ -546,7 +546,7 @@ input[type=email] {
     }
 
     /* Styles for the footer */
-    input[type=email] {
+    .footer-email {
         width: 90%;
         padding: 10px;
         margin: 10px 10px 10px 0;
@@ -755,7 +755,7 @@ input[type=email] {
         margin-left: 20px;
     }
 
-    input[type=email] {
+    .footer-email {
         width: 100%;
         padding: 10px;
         margin: 10px 10px 10px 0;

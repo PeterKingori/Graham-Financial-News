@@ -9,6 +9,104 @@
     flex-direction: column;
     gap: 20px;
     padding: 0px 80px;
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.contribute-content p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.contribute-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.sender-details {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.sender-details input {
+    width: 100%;
+    padding: 10px;
+}
+
+.sender-message {
+    padding-top: 10px;
+}
+
+.sender-message textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+input::file-selector-button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.accepted-docs {
+    font-size: 10px;
+}
+
+.accept-sentence {
+    font-size: 14px;
+}
+
+.accept-sentence a {
+    text-decoration: underline;
+}
+
+.submit-button {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #001f3f;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Styles for screen sizes below 768px e.g tablets and mobile phones */
+@media screen and (max-width: 768px) {
+    .sender-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Styles for screen sizes below 412px, typically mobile phones */
+@media screen and (max-width: 412px) {
+    .contribute-heading {
+        text-align: left;
+        font-size: 50px;
+        margin: 10px 0px;
+    }
+
+    .contribute-content {
+        padding: 0;
+    }
+
+    .choose-file-button {
+        width: 100%;
+    }
+
+    input[type="file"] {
+        width: 100%;
+    }
 }

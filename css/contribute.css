@@ -1,6 +1,6 @@
 .contribute-heading {
     text-align: center;
-    font-size: 80px;
+    font-size: 60px;
     margin: 10px 0px 40px 0px;
 }
 
@@ -88,6 +88,10 @@ input::file-selector-button {
 
 /* Styles for screen sizes below 768px e.g tablets and mobile phones */
 @media screen and (max-width: 768px) {
+    .contribute-heading {
+        font-size: 40px;
+    }
+
     .sender-details {
         flex-direction: column;
         gap: 20px;
@@ -98,7 +102,7 @@ input::file-selector-button {
 @media screen and (max-width: 412px) {
     .contribute-heading {
         text-align: left;
-        font-size: 50px;
+        font-size: 30px;
         margin: 10px 0px;
     }
 

@@ -1,13 +1,5 @@
 /* Self hosted fonts */
 @font-face {
-    font-family: "Libre Baskerville";
-    font-style: normal;
-    font-weight: bold;
-    src: local('Times New Roman'), url('../assets/fonts/LibreBaskerville-Bold.ttf') format('truetype');
-    font-display: swap;
-}
-
-@font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 200;
@@ -66,7 +58,7 @@ a:hover {
 h1,
 h2,
 h3 {
-    font-family: "Libre Baskerville";
+    font-family: "Montserrat";
 }
 
 h1 {
@@ -76,7 +68,6 @@ h1 {
 p {
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 14px;
 }
 
 a {
@@ -232,9 +223,10 @@ img#close-icon {
 }
 
 .carousel-article-title {
-    font-family: "Libre Baskerville";
+    font-family: "Montserrat";
     display: block;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    font-weight: 600;
 }
 
 .carousel-article-title,
@@ -274,8 +266,9 @@ img#close-icon {
 }
 
 a.post-link {
-    font-family: "Libre Baskerville";
+    font-family: "Montserrat";
     font-size: 1.17em;
+    font-weight: 600;
 }
 
 .left-news-category .post-item-image,
@@ -332,7 +325,7 @@ a.post-link {
     color: #006892;
     font-family: Montserrat;
     font-weight: 200;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1rem;
     list-style-type: decimal;
     padding: 0 0 0 16px;
@@ -703,10 +696,6 @@ footer p,
 
     .carousel-article-title {
         font-size: 1rem;
-    }
-
-    .carousel-text p {
-        font-size: 10px;
     }
 
     /* Styles for the other news section */

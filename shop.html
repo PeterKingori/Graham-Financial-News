@@ -20,23 +20,16 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-color.png">
 
         <!-- Page Title -->
-        <title>Graham Financial News</title>
-
-        <!-- Preload fonts to improve webpage loading speed -->
-        <link rel="preload" href="./assets/fonts/Montserrat-Light.ttf" as="font" type="font/ttf" crossorigin>
-        <link rel="preload" href="./assets/fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin>
-        <link rel="preload" href="./assets/fonts/Montserrat-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+        <title>About us - Graham Financial News</title>
 
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/shop.css">
 
         <!-- JavaScript -->
-        <script src="./js/api_key.js" defer></script>
-        <script src="./js/posts.js" defer></script>
-        <script src="./js/index.js" defer></script>
-        <script src="./js/popularNews.js" defer></script>
+        <script src="./js/products.js" defer></script>
+        <script src="./js/shop.js" defer></script>
         <script src="./js/header.js" defer></script>
-
     </head>
 
     <body>
@@ -68,59 +61,48 @@
 
             <!-- Main content -->
             <main>
-                <!-- Featured news section -->
-                <section class="featured-news">
-                    <h1 class="category-title">Featured</h1>
-                    <!-- Slideshow container -->
-                    <div class="carousel-container" id="carousel-container">
-                        <!-- Slides with images and text -->
-                        <!-- Slides to be loaded using JavaScript in the scripts.js file -->
-                        <!-- Arrows for moving to the next and previous slides -->
-                        <a class="prev" id="prev-button">&#10094;</a>
-                        <a class="next" id="next-button">&#10095;</a>
+                <!-- Shop products -->
+                <section class="shop-content">
+                    <!-- Open shopping cart button -->
+                    <span class="open-cart-btn" id="open-cart-btn">Cart (<span id="items-in-cart">0</span>)</span>
+                    <!-- Shop header -->
+                    <h1 class="shop-heading">Shop</h1>
+                    <!-- Products -->
+                    <div class="products-grid" id="products">
+                        <!-- Products to be added using JavaScript -->
                     </div>
                 </section>
-                <!-- End of featured news section -->
-
-                <!-- Other news section -->
-                <section class="news-categories">
-                    <div class="news-articles">
-                        <div class="left-news-category" id="tech-category">
-                            <h1 class="section-heading">Technology</h1>
-                            <!-- Content to be added using JavaScript in the scripts.js file -->
-                        </div>
-                        <div class="middle-news-category" id="finance-category">
-                            <h1 class="section-heading">Banking & Finance</h1>
-                            <!-- Content to be added using JavaScript in the scripts.js file -->
-                        </div>
-                    </div>
-                    <div class="right-news-category">
-                        <div class="news-list">
-                            <h3 class="section-heading">Most popular</h3>
-                            <div class="popular-news-list" id="popular-news">
-                                <!-- Content to be added using JavaScript in the scripts.js file -->
-                            </div>
-                        </div>
-                        <div class="news-videos">
-                            <h3 class="section-heading">Videos</h3>
-                            <div class="videos">
-                                <iframe src="https://www.youtube.com/embed/MVeDvurX814"
-                                    title="Mr. Anthony Chin - CEO of Maruhan Japan Bank, Lao at IFM Awards 2019"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <div class="load-more">
-                    <button id="load-more-btn">Load more</button>
-                </div>
-                <!-- End of other news section -->
             </main>
-            <!-- End of main content -->
+            <!-- End of shop content -->
+
+            <!-- Side shopping cart -->
+            <section class="shopping-cart" id="shopping-cart">
+                <div class="cart-content">
+                    <!-- Cart header -->
+                    <div class="cart-header">
+                        <h2 class="cart-title">Your cart</h2>
+                        <img src="./assets/icons/xmark-solid.svg" alt="close cart icon" id="close-cart-btn"
+                            class="close-cart-btn" width="20" height="20">
+                    </div>
+                    <!-- Cart items -->
+                    <div class="cart-items" id="cart-items">
+                        <!-- Items to be added using JavaScript -->
+                    </div>
+                    <!-- Cart actions -->
+                    <div class="cart-actions">
+                        <div class="subtotal">
+                            <p>SUBTOTAL: </p>
+                            <p>$<span id="subtotal-price">100</span></p>
+                        </div>
+                        <button>View Cart</button>
+                        <button>Checkout</button>
+                    </div>
+                </div>
+            </section>
+            <!-- End of shopping cart -->
 
             <!-- Footer section -->
-            <footer>
+            <footer id="footer">
                 <div class="left-footer-section">
                     <!-- Links to other pages in the website -->
                     <ul>

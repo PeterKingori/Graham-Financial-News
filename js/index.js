@@ -165,7 +165,7 @@ try {
 }
 
 // Adding a click event listener to each article
-let articles2 = document.getElementsByClassName("finance-post-link");
+const articles2 = document.getElementsByClassName("finance-post-link");
 
 for (let i = 0; i < articles2.length; i++) {
   const id = articles2[i].getAttribute("id");

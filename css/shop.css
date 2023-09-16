@@ -107,7 +107,7 @@ https: //www.youtube.com/watch?v=fnh-Ux4Jj5E
 /* Cart items */
 .cart-items {
     flex: 1;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .cart-item {
@@ -183,9 +183,12 @@ signs an impression of being pressed. */
     cursor: pointer;
 }
 
-.remove-item span {
-    font-size: 20px;
+.remove-item button {
+    font-size: 24px;
     user-select: none;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 /* Cart actions */

@@ -6,11 +6,11 @@ document.getElementById("date").innerHTML = new Date().toLocaleDateString("en-us
   day: "numeric",
 });
 
-// STICKY NAVIGATION BAR
 // Access the navigation bar
 let navBar = document.getElementById("nav-bar");
 
-// When the user scrolls the page add the sticky class to the navbar and remove it when you leave the scroll position
+// STICKY NAVIGATION BAR
+// When the user scrolls the page add the 'sticky' class to the navbar and remove it when you leave the scroll position
 window.onscroll = function () {
   stickyNavbar();
 };

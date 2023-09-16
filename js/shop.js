@@ -114,4 +114,7 @@ function updateCart() {
 function removeProductFromCart(productId) {
   cartItems = cartItems.filter((item) => item.id != productId);
   updateCart();
+  numberOfCartItems--;
+  // Update the number on the page showing the number of items in the cart
+  document.getElementById("items-in-cart").innerHTML = numberOfCartItems;
 }

@@ -18,6 +18,9 @@ for (let i = 0; i < numberOfSlides; i++) {
 // Add slides content
 const carouselContainer = document.getElementById("carousel-container");
 
+/*This code was adapted from:
+C. Ferdinandi, 'Two more ways to create HTML from an array of data with vanilla JS', 2019 [Online]
+Available: "https://gomakethings.com/two-more-ways-to-create-html-from-an-array-of-data-with-vanilla-js/" [Accessed: September 2023] */
 try {
   // Create a fragment that will hold the slides
   let slidesFragment = document.createDocumentFragment();
@@ -42,6 +45,8 @@ try {
   // Append the fragment with the slides to the carousel container
   carouselContainer.appendChild(slidesFragment);
 
+  /*This code for showing and clicking through the slides on the home page was adapted from: w3schools, 'How TO - Slideshow', [Online]
+Available: "https://www.w3schools.com/howto/howto_js_slideshow.asp" [Accessed: September 2023] */
   // The slides change by clicking the next or previous buttons.
   let slideIndex = 1;
   showSlides(slideIndex);
@@ -100,6 +105,9 @@ function openArticle(event, index) {
 // Access the technology category in the other news section
 const techCategory = document.getElementById("tech-category");
 
+/*This code was adapted from:
+C. Ferdinandi, 'Two more ways to create HTML from an array of data with vanilla JS', 2019 [Online]
+Available: "https://gomakethings.com/two-more-ways-to-create-html-from-an-array-of-data-with-vanilla-js/" [Accessed: September 2023] */
 try {
   // Create a fragment that will hold the articles
   let techFragment = document.createDocumentFragment();
@@ -126,6 +134,9 @@ try {
 // Adding a click event listener to each article
 let articles1 = document.getElementsByClassName("tech-post-link");
 
+/*This code was adapted from:
+Stack Overflow, 'How to add event listeners to an array of objects', [Online]
+Available: "https://stackoverflow.com/questions/17981437/how-to-add-event-listeners-to-an-array-of-objects" [Accessed: September 2023] */
 for (let i = 0; i < articles1.length; i++) {
   const id = articles1[i].getAttribute("id");
   articles1[i].addEventListener("click", function (event) {
@@ -141,6 +152,9 @@ function openTechArticle(event, index) {
 // Access the Banking and Finance category in the other news section
 const financeCategory = document.getElementById("finance-category");
 
+/*This code was adapted from:
+C. Ferdinandi, 'Two more ways to create HTML from an array of data with vanilla JS', 2019 [Online]
+Available: "https://gomakethings.com/two-more-ways-to-create-html-from-an-array-of-data-with-vanilla-js/" [Accessed: September 2023] */
 try {
   // Create a fragment that will hold the articles
   let financeFragment = document.createDocumentFragment();
@@ -167,6 +181,9 @@ try {
 // Adding a click event listener to each article
 const articles2 = document.getElementsByClassName("finance-post-link");
 
+/*This code was adapted from:
+Stack Overflow, 'How to add event listeners to an array of objects', [Online]
+Available: "https://stackoverflow.com/questions/17981437/how-to-add-event-listeners-to-an-array-of-objects" [Accessed: September 2023] */
 for (let i = 0; i < articles2.length; i++) {
   const id = articles2[i].getAttribute("id");
   articles2[i].addEventListener("click", function (event) {
@@ -181,6 +198,10 @@ function openFinanceArticle(event, index) {
 //===================================================================
 //===================================================================
 // LOADING ARTICLES FROM a news api
+
+/*This code was adapted from:
+Coding Artist, 'News App Javascript', 2023 [Online]
+Available: "https://codingartistweb.com/2023/03/news-app-javascript/" [Accessed: September 2023] */
 
 const loadMore = document.getElementById("load-more-btn");
 loadMore.addEventListener("click", function () {

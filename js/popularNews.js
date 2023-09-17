@@ -20,6 +20,9 @@ const popularArticlesList = [
 // Access the popular news category in the other news section
 let popularNewsCategory = document.getElementById("popular-news");
 
+/*This code was adapted from:
+C. Ferdinandi, 'Two more ways to create HTML from an array of data with vanilla JS', 2019 [Online]
+Available: "https://gomakethings.com/two-more-ways-to-create-html-from-an-array-of-data-with-vanilla-js/" [Accessed: September 2023] */
 try {
   // Create an ordered list
   let list = document.createElement("ol");

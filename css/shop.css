@@ -55,9 +55,9 @@
     padding: 0px 10px 10px 0px;
 }
 
-/* Shopping cart styles. Some of these were from a YouTube video at
-https: //www.youtube.com/watch?v=fnh-Ux4Jj5E 
-*/
+/* Some sections of this code for styling the shopping cart were adapted from:
+Web Dev Creative, 'Ecommerce Side Cart tutorial', 2021 [Online]
+Available: "https://www.youtube.com/watch?v=fnh-Ux4Jj5E" [Accessed: September 2023] */
 .shopping-cart {
     position: fixed;
     top: 0;

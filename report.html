@@ -16,10 +16,337 @@
 
         <!-- Page Title -->
         <title>CM1040 Web Development Final Assignment Report</title>
+
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/report.css">
+
+        <!-- JavaScript -->
+        <script src="./js/header.js" defer></script>
     </head>
 
     <body>
 
+        <div class="container" id="main-container">
+            <!-- Header -->
+            <header id="header">
+                <!-- Shows the daily date -->
+                <p id="date"></p>
+                <!-- Company logo -->
+                <div class="logo" id="logo">
+                    <a href="index.html">
+                        <img src="./images/companylogo/graham-logo-white-on-transparent-background.png"
+                            alt="Graham news logo">
+                    </a>
+                </div>
+                <!-- Navigation bar -->
+                <nav class="main-navigation" id="nav-bar">
+                    <a href="index.html" class="navbar-item">Home</a>
+                    <a href="aboutus.html" class="navbar-item">About</a>
+                    <a href="contribute.html" class="navbar-item">Contribute</a>
+                    <a href="shop.html" class="navbar-item">Shop</a>
+                    <a href="report.html" class="navbar-item">Report</a>
+                    <img src="./assets/icons/bars-solid.svg" alt="menu icon" id="nav-icon" width="20" height="20">
+                    <img src="./assets/icons/xmark-solid.svg" alt="close menu icon" id="close-icon" width="20"
+                        height="20">
+                </nav>
+            </header>
+            <!-- End of Header -->
+
+            <!-- Main content -->
+            <main>
+                <section class="profile-details">
+                    <h1>Final Assignment Report</h1>
+                    <h2>Peter Ndegwa - Web Developer</h2>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Introduction</h3>
+                    <div class="section-content">
+                        <p class="section-question">What is the essential story being told by your site and what type of
+                            structure did you choose to implement?</p>
+                        <p class="section-answer">I have an interest in finance and business and I am a huge fan of the
+                            TV show Gilmore Girls. I decided to design a
+                            website based on these two interests. In Gilmore Girls, the Stars Hollow Gazette is a local
+                            newspaper in the Stars
+                            Hollow town . The paper has a print edition but has no online presence. I decided to create
+                            a financial news website for
+                            a fictional finance club in Stars Hollow that caters to people interested in international
+                            finance and business.</p>
+                        <p class="section-answer">The essential story being told by the website is to present finance
+                            and business news that is updated daily. This is in
+                            contrast to a print magazine that might only be printed once a week or less regularly and
+                            isn’t suitable for this kind
+                            of information. The news articles consist of stories written by the editorial team as well
+                            as those pulled from an api
+                            that enriches and widens the scope of information that can be presented to readers. Each
+                            article on the home page can be
+                            opened in a separate page to be read in full. Readers can also contribute their own stories
+                            through a form on the
+                            Contribute page. The website also includes an online store element whereby readers can buy
+                            special editions of magazines
+                            or other material that the team might think would be beneficial.</p>
+                        <p class="section-answer">I chose to implement a webbed model for the website, which has a
+                            net-like structure. The homepage is connected to the
+                            other pages through internal links which are shown on the navigation bar and the footer. The
+                            navigation bar and footer
+                            are present on all pages. The other pages in my website are the About, Contribute, Shop and
+                            an article page that opens
+                            when an individual article in the home page is clicked on. Since each page is available at
+                            all times, visitors can
+                            access all other pages from the page they are currently on. This structure is duplicated on
+                            the footer which can also be
+                            used to move to any other page on the website. The structure looks as follows:</p>
+                        <img src="./images/reportImages/website_structure.png" alt="website structure"
+                            class="website-structure">
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Inspiration</h3>
+                    <div class="section-content">
+                        <p class="section-question">State 3 things that have inspired you when creating your website.
+                        </p>
+                        <p class="section-answer">I was inspired by the following three websites from which I picked
+                            different elements to incorporate into my website. They also have the kind of content that I
+                            wanted to include in my website.</p>
+                        <ol class="section-answer answer-list">
+                            <li><a href="https://preview.studio.site/live/M3aAJkPYWe/" target="_blank"
+                                    class="answer-link">Newspaper
+                                    Magazine</a> which is a design by Tomasz Mazurczak on Dribbble available <a
+                                    href="https://dribbble.com/shots/17575967-Newspaper-Fashion-Magazine-06"
+                                    target="_blank" class="answer-link">here.</a></li>
+                            <li><a href="https://internationalfinance.com/" target="_blank"
+                                    class="answer-link">International Finance</a>
+                                which is a finance news website.</li>
+                            <li><a href="https://www.worldfinance.com/" target="_blank" class="answer-link">World
+                                    Finance</a> which is
+                                another finance news website.</li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Accessibility</h3>
+                    <div class="section-content">
+                        <p class="section-question">State 3 ways in which your site is accessible.</p>
+                        <ol class="section-answer answer-list">
+                            <li>I used a font that is accessible to all users. I had used a serif font called Libre
+                                Baskerville which has pronounced
+                                tails. I realised that this would reduce the accessibility for readers with visual
+                                impairment, so I changed all the text
+                                to use a sans serif font called Montserrat.</li>
+                            <li>I ensured that there is adequate contrast between the content and background to make
+                                sure the website is still usable by
+                                readers with visual impairment and is also readable outside in sunlight. I checked the
+                                contrast using the developer
+                                tools on Google Chrome to make sure it was right. Information is thus communicated
+                                effectively to a user and it remains
+                                legible.</li>
+                            <li>I used semantic markup such as header, nav, footer, main and section in the HTML files
+                                which is useful for people that
+                                use screen readers. I made sure to use “alt” text in the image tag that will be shown if
+                                the image can&#39;t be displayed
+                                and is also read out aloud by screen readers. In the Contribute page there is a form
+                                with text inputs which have the
+                                label HTML element for accessibility as well.</li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Usability</h3>
+                    <div class="section-content">
+                        <p class="section-question">State 3 ways in which you considered the usability of your site.</p>
+                        <ol class="section-answer answer-list">
+                            <li>I made the site responsive using media queries so that it could be viewed on a mobile
+                                phone or tablet size device and
+                                produce the same experience as that on a laptop. This way there is flexibility in use.
+                            </li>
+                            <li>I tried to keep the design simple and intuitive to use, regardless of a user&#39;s
+                                experience. The navigation bar doesn&#39;t
+                                have a lot of options that could overwhelm a user and it sticks to the top when the page
+                                is scrolled so that other pages
+                                in the website are always accessible even if a user has scrolled to the bottom. There is
+                                plenty of whitespace around the
+                                elements of a page and paragraphs of text. This way the content doesn&#39;t appear
+                                crammed
+                                and a user is comfortable going
+                                through the site and reading the material without getting overwhelmed. I also didn&#39;t
+                                use
+                                a lot of colours and the ones I
+                                used contrast well with each other.</li>
+                            <li>I used a webbed model for the site structure. In this model the home page is connected
+                                to other pages through internal
+                                links. These links are the same in the navigation bar and footer so a user can locate
+                                information that they need. I also
+                                used page names that accurately describe the content within them. The goal of this was
+                                so that the website can be used
+                                comfortably without getting fatigued.</li>
+                        </ol>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Learning</h3>
+                    <div class="section-content">
+                        <p class="section-question">State 3 things you had to learn or find out to create your site. How
+                            did you achieve that?</p>
+                        <ol class="section-answer answer-list">
+                            <li>I had to learn how to use CSS and JavaScript to create a responsive and sticky
+                                navigation bar. For the sticky part, when
+                                a user scrolls down the navigation bar doesn&#39;t disappear from view and this makes it
+                                easier for a user to navigate to
+                                another page even if they have scrolled to the end of the current page without having to
+                                scroll back up. This improves
+                                the usability. For the responsive part, when the website is being viewed on a mobile
+                                phone, the navigation menu is
+                                hidden from view and only appears when a user clicks on the hamburger menu at the top
+                                right. The menu is also presented
+                                in full screen to make it easier to select an option.</li>
+                            <li>I had to learn how to use JavaScript to present array data by accessing the DOM and
+                                looping through the data while
+                                creating HTML elements that would present the data. This was a better alternative to
+                                presenting all the data using just
+                                HTML since this would be repetitive, and it wouldn&#39;t be efficient for large data
+                                sets. I
+                                used this technique to present
+                                sample articles in the carousel slider at the top of the home page, the first four
+                                articles in the technology and
+                                banking and finance sections, and the list of most popular news. This technique also
+                                enables reusability of code since I
+                                was able to use the same code to present the list of most popular news in the article
+                                page when a sample article is
+                                clicked on to be read. I also had to learn how to use JavaScript to fetch data from an
+                                api and present it using this
+                                same technique.</li>
+                            <li>I had to learn how to implement the functionality of a shopping cart for my shop page
+                                using JavaScript. I was able to
+                                get it to add and remove items but there is a lot of functionality that is missing and a
+                                bug that I haven&#39;t been able to
+                                solve.</li>
+                        </ol>
+                        <p class="section-answer">To achieve the above, I used Google to search for solutions, then I
+                            read a few articles and answers on Stack Overflow
+                            until I found solutions that I understood and was confident I could implement. However, I
+                            found that the solutions
+                            weren&#39;t being applied to situations and data exactly like mine so I had to adapt and
+                            combine
+                            different elements from
+                            various solutions to come up with solutions that worked for the data I had.
+
+                            For the shopping cart I found a YouTube video that explained it better than reading
+                            articles. I had already started
+                            working on it using the technique for adding article posts so I just had to add a few new
+                            elements.</p>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Evaluation I</h3>
+                    <div class="section-content">
+                        <p class="section-question">What aspects of your work do you think were particularly successful?
+                            Why?</p>
+                        <p class="section-answer"></p>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Evaluation II</h3>
+                    <div class="section-content">
+                        <p class="section-question">What aspects of your work could be improved? How might you do things
+                            differently
+                            another time?</p>
+                        <ol class="section-answer answer-list">
+                            <li>The loading speed can be improved. On Google Chrome, I went to the developer options and
+                                used the Lighthouse feature to
+                                check the loading speed. I realised that it was being affected by the fonts I wanted to
+                                use, the images and the
+                                JavaScript files. So, I reduced the number of fonts and using advice from lighthouse I
+                                learnt that I can use a “preload”
+                                attribute in the links loading the fonts. I also reduced the size of images I used by
+                                resizing them. Another time I
+                                would try to further improve the performance by optimising the images before loading and
+                                loading the JavaScript files in
+                                a way that it doesn&#39;t interfere with the HTML but this could be challenging since
+                                the
+                                JavaScript dynamically adds the
+                                content. I would do more research on how to optimise adding dynamic content using
+                                JavaScript. This could also be an issue with the internet connection.</li>
+                            <li>Another thing that can be improved is the layout and design of the news posts on the
+                                home page. I think there are more
+                                appealing layouts that a better designer than me can come up with. This also applies to
+                                the other pages. Another time,
+                                if possible, I would seek the help of a designer to come up with better designs and
+                                layouts. This also includes the
+                                fonts to use and which ones pair well together without affecting the accessibility.</li>
+                            <li>The shopping cart in the Shop page doesn&#39;t have full functionality. There is also a
+                                bug
+                                when items are removed from the
+                                cart that causes one extra item to be shown as remaining in the cart even if it is
+                                empty. Another time I would plan my
+                                time well so that I have time to fully implement the features I want and to have time to
+                                do proper research and testing
+                                to fix bugs.</li>
+                            <li>Right now the API key I use to access the news is very exposed. I tried a number of ways
+                                to hide it while still
+                                retaining functionality but they didn&#39;t work. This can definitely be improved
+                                because it
+                                is a security risk. Another
+                                time I think I will ask for help from a senior developer or lecturer at university if I
+                                can&#39;t find a solution by myself
+                                or if it takes too much time.</li>
+                            <li>The CSS can also be improved to use more reusable CSS classes for elements like
+                                headings, sections, images and so on
+                                that can be applied across the whole site. I tried to do this but it still needs
+                                improvement. There are also newer ways
+                                that have been added to CSS such as using variables and I would research on using these
+                                another time.</li>
+                        </ol>
+                        <p class="section-answer">For all the above points I think for another time I would plan my time
+                            better so that I can research well and have time
+                            to learn new things. I would also seek help from an online tutor or senior developer.</p>
+                    </div>
+                </section>
+                <section class="section">
+                    <h3 class="heading">Resources</h3>
+                    <div class="section-content">
+                        <p class="section-question">What resources did you use in your work?</p>
+                        <p class="section-answer"></p>
+                    </div>
+                </section>
+            </main>
+            <!-- End of main content -->
+
+            <!-- Footer section -->
+            <footer>
+                <div class="left-footer-section">
+                    <!-- Links to other pages in the website -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contribute.html">Contribute</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="middle-footer-section">
+                    <ul>
+                        <li><a>Blog</a></li>
+                        <li><a>Terms & conditions</a></li>
+                        <li><a>Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="right-footer-section">
+                    <!-- Input box for visitor to subscribe to newsletter by email -->
+                    <p>Get our newsletter</p>
+                    <label for="user-email">
+                        <input class="footer-email" type="email" name="user-email" id="user-email"
+                            placeholder="Enter your email">
+                    </label>
+                    <button class="submit-email-button" type="submit">Subscribe</button>
+                    <!-- Links to social media pages -->
+                    <div class="social-links">
+                        <a><img src="./assets/icons/facebook_icon.png" alt="facebook link"></a>
+                        <a><img src="./assets/icons/instagram_icon.png" alt="instagram link"></a>
+                        <a><img src="./assets/icons/youtube_icon.png" alt="youtube link"></a>
+                        <a><img src="./assets/icons/twitter_icon.png" alt="twitter link"></a>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of footer section -->
     </body>
 
 </html>

@@ -1,4 +1,7 @@
 // TIME SHOWING ON HEADER
+/*This code was copied from:
+J. Olawanle, 'How to Format Dates in JavaScript with One Line of Code', 2021 [Online]
+Available: "https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/" [Accessed: September 2023] */
 document.getElementById("date").innerHTML = new Date().toLocaleDateString("en-us", {
   weekday: "long",
   year: "numeric",
@@ -14,6 +17,9 @@ let navBar = document.getElementById("nav-bar");
 window.onscroll = function () {
   stickyNavbar();
 };
+/*This code was adapted from:
+W. Davies, 'How to Create a Sticky Navbar', 2021 [Online]
+Available: "https://alvarotrigo.com/blog/sticky-navbar/" [Accessed: September 2023] */
 let header = document.getElementById("header");
 let navbarPosition = navBar.getBoundingClientRect().top;
 function stickyNavbar() {
@@ -39,6 +45,10 @@ let closeIcon = document.getElementById("close-icon");
 navIcon.addEventListener("click", toggleResponsiveNavigationMenu, false);
 closeIcon.addEventListener("click", toggleResponsiveNavigationMenu, false);
 
+/*This code was adapted from:
+Coding Artist, 'Responsive Navigation Bar', 2021 [Online]
+Available: "https://codingartistweb.com/2021/12/responsive-navigation-bar-html-css-js/"
+[Accessed: September 2023] */
 function toggleResponsiveNavigationMenu() {
   mainContainer.classList.toggle("responsive");
   date.classList.toggle("responsive");

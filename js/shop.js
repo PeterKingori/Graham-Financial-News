@@ -1,3 +1,7 @@
+/* Some sections of this code for adding and removing items from the shopping cart were adapted from:
+Web Dev Creative, 'Ecommerce Side Cart tutorial', 2021 [Online]
+Available: "https://www.youtube.com/watch?v=fnh-Ux4Jj5E" [Accessed: September 2023] */
+
 // Open and close the shopping cart on the side of the page
 const openCartButton = document.getElementById("open-cart-btn");
 const closeCartButton = document.getElementById("close-cart-btn");
@@ -45,6 +49,9 @@ const addToCartButtons = document.getElementsByClassName("add-to-cart");
 // Variable to hold the number of items in the cart
 let numberOfCartItems = 0;
 
+/*This code was adapted from:
+Stack Overflow, 'How to add event listeners to an array of objects', [Online]
+Available: "https://stackoverflow.com/questions/17981437/how-to-add-event-listeners-to-an-array-of-objects" [Accessed: September 2023] */
 /* Add a click event listener to each 'add to cart' button that
 runs the addProductToCart() function when clicked */
 for (let i = 0; i < addToCartButtons.length; i++) {

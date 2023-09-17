@@ -65,7 +65,8 @@ h1 {
     font-size: 1.8em;
 }
 
-p {
+p,
+li {
     font-family: Montserrat;
     font-weight: normal;
 }

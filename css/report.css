@@ -1,9 +1,3 @@
-/* Styles for the element containing the main content */
-main {
-    width: 1000px;
-    margin: 0 auto;
-}
-
 /* Main heading at the top */
 .profile-details h1 {
     font-size: 2rem;
@@ -48,6 +42,7 @@ p.section-question {
 
 .answer-list {
     padding-left: 30px;
+    width: 100%;
 }
 
 .answer-list li {
@@ -77,10 +72,10 @@ p.image-heading {
     margin-bottom: 10px;
 }
 
-/* Styles for screen sizes below 768px e.g tablets and mobile phones */
-@media screen and (max-width: 768px) {
-    main {
-        width: 700px;
-        margin: 0 auto;
+/* Styles for screen sizes below 412px, typically mobile phones */
+
+@media screen and (max-width: 412px) {
+    .appendice-images img {
+        width: 300px;
     }
 }

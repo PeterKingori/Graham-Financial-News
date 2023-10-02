@@ -199,8 +199,6 @@ function openFinanceArticle(event, index) {
 //===================================================================
 // LOADING ARTICLES FROM a news api
 
-const key = config.API_KEY;
-
 /*This code was adapted from:
 Coding Artist, 'News App Javascript', 2023 [Online]
 Available: "https://codingartistweb.com/2023/03/news-app-javascript/" [Accessed: September 2023] */

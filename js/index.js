@@ -199,6 +199,8 @@ function openFinanceArticle(event, index) {
 //===================================================================
 // LOADING ARTICLES FROM a news api
 
+const key = config.API_KEY;
+
 /*This code was adapted from:
 Coding Artist, 'News App Javascript', 2023 [Online]
 Available: "https://codingartistweb.com/2023/03/news-app-javascript/" [Accessed: September 2023] */
@@ -234,7 +236,7 @@ function createPosts(articles, htmlSection) {
 // API call
 const getTechNews = async () => {
   category = "technology";
-  requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${api_key}`;
+  requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${key}`;
   let response = await fetch(requestUrl);
   if (!response.ok) {
     console.log("Error while fetching data.");
@@ -250,7 +252,7 @@ const getTechNews = async () => {
 
 const getBusinessNews = async () => {
   category = "business";
-  requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${api_key}`;
+  requestUrl = `https://gnews.io/api/v4/top-headlines?category=${category}&lang=en&country=${country}&max=5&apikey=${key}`;
   let response = await fetch(requestUrl);
   if (!response.ok) {
     console.log("Error while fetching data.");
